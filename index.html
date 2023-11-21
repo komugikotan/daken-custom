@@ -56,6 +56,10 @@
     <script>
         const searchParams = new URLSearchParams(window.location.search);
 
+        if (!window.location.search) {
+          window.location.href = 'choose.html';
+        }
+
         let finished = false;
         let current_word = "";
         let current_number = 0;
